@@ -17,7 +17,7 @@ Architecture:
 -> FC. 
 
 Code Structure:  
---S7-Solution.ipynb. 
+--S7-Solution.ipynb.
 --- datapreparation.py. 
 --- display.py. 
 --- dnn.py. 
