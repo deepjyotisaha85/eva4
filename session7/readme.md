@@ -3,7 +3,7 @@ Model Accuracy: 81 %
 Total Parameters: 330,944
 
 Architecture:
--> Input Block
+-> Input Block </n>
 -> Convolution Block 1
 -> Transition Block 1
 -> Convolution Block 2
