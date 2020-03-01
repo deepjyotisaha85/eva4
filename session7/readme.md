@@ -18,8 +18,14 @@ Architecture:
 
 Code Structure:  
 --S7-Solution.ipynb.
---- datapreparation.py. 
+
+--- datapreparation.py.
+
 --- display.py. 
+
 --- dnn.py. 
+
 --- training.py. 
+
 --- evaluate.py. 
+
