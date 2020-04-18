@@ -20,7 +20,7 @@ class album_Compose:
                                                      #PadIfNeeded(min_height=64, min_width=64, always_apply=True, p=1.0),
                                                      #RandomCrop(height=32, width=32, always_apply=True, p=1.0),
                                                      IAAFliplr(p=0.5),
-                                                     Cutout(num_holes=1, max_h_size=8, max_w_size=8, p=0.5),
+                                                     Cutout(num_holes=1, max_h_size=16, max_w_size=16, p=0.5),
                                                      Normalize(mean=[0.49139968, 0.48215841, 0.44653091], std=[0.24703223, 0.24348513, 0.26158784],),
                                                      ToTensor()
                                                      ])
@@ -35,7 +35,7 @@ class album_Compose:
         img = self.albumentations_transform(image=img)['image']
         return img
 
-def load(datasetname, splitsize, split=False, albumentations=True):
+def load(datasetname, splitsize, batch_size=512, split=False, albumentations=True):
   random_seed = 42
   
   if datasetname == 'cifar10':
@@ -66,22 +66,14 @@ def load(datasetname, splitsize, split=False, albumentations=True):
     down_url  = "http://cs231n.stanford.edu/tiny-imagenet-200.zip"
     dataset = TinyImageNetDataset(down_url)
     classes = dataset.classes
-    shuffle_dataset = True
-    # Creating data indices for training and validation splits:
-    dataset_size = len(dataset)
-    print("Size of Dataset is: ", dataset_size)
-    indices = list(range(dataset_size))
-    split = int(np.floor(splitsize * dataset_size))
-    np.random.seed(random_seed)
-    np.random.shuffle(indices)
-    train_indices, val_indices = indices[split:], indices[:split]
-    
-    # Creating PT data samplers and loaders:
-    train_sampler = SubsetRandomSampler(train_indices)
-    valid_sampler = SubsetRandomSampler(val_indices)
+    train_len = len(dataset)*splitsize//100
+    test_len = len(dataset) - train_len 
+    train_set, val_set = random_split(dataset, [train_len, test_len])
+    train_dataset = DatasetFromSubset(train_set, transform=train_transform)
+    test_dataset = DatasetFromSubset(val_set, transform=test_transform)
 
 
-# CUDA?
+  # CUDA?
   cuda = torch.cuda.is_available()
   print("CUDA Available?", cuda)
 
@@ -91,17 +83,13 @@ def load(datasetname, splitsize, split=False, albumentations=True):
   if cuda:
     torch.cuda.manual_seed(random_seed) 
 
-  if split:
-    dataloader_args = dict(batch_size=512, num_workers=4, pin_memory=True) if cuda else dict(batch_size=64)
-    trainloader = torch.utils.data.DataLoader(dataset,  **dataloader_args, sampler=train_sampler)
-    testloader = torch.utils.data.DataLoader(dataset, **dataloader_args, sampler=valid_sampler)
-  else:
-    dataloader_args = dict(shuffle=True, batch_size=512, num_workers=4, pin_memory=True) if cuda else dict(shuffle=True, batch_size=64)
-    trainloader = torch.utils.data.DataLoader(trainset, **dataloader_args)
-    testloader = torch.utils.data.DataLoader(testset, **dataloader_args)
+    dataloader_args = dict(shuffle=True, batch_size=batch_size, num_workers=4, pin_memory=True) if cuda else dict(shuffle=True, batch_size=64)
+    trainloader = torch.utils.data.DataLoader(train_dataset, **dataloader_args)
+    testloader = torch.utils.data.DataLoader(test_dataset, **dataloader_args)
        
 
   return classes, trainloader, testloader
+
 
 class TinyImageNetDataset(Dataset):
     def __init__(self, url):
@@ -161,6 +149,21 @@ class TinyImageNetDataset(Dataset):
       for file in notebook.tqdm(iterable=zip_ref.namelist(), total=len(zip_ref.namelist())):
         zip_ref.extract(member = file)
       zip_ref.close()
+
+class DatasetFromSubset(Dataset):
+    def __init__(self, subset, transform=None):
+        self.subset = subset
+        self.transform = transform
+
+    def __getitem__(self, index):
+        x, y = self.subset[index]
+        if self.transform:
+            x = self.transform(x)
+        return x, y
+
+    def __len__(self):
+        return len(self.subset)
+
 
 #Old Album compose
 #class album_Compose:
