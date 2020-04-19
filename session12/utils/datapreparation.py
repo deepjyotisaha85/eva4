@@ -17,10 +17,10 @@ class album_Compose:
     def __init__(self, train=True):
         if train:
             self.albumentations_transform = Compose([
-                                                     #PadIfNeeded(min_height=64, min_width=64, always_apply=True, p=1.0),
-                                                     #RandomCrop(height=32, width=32, always_apply=True, p=1.0),
+                                                     PadIfNeeded(min_height=72, min_width=72, always_apply=True, p=1.0),
+                                                     RandomCrop(height=64, width=64, always_apply=True, p=1.0),
                                                      IAAFliplr(p=0.5),
-                                                     Cutout(num_holes=1, max_h_size=16, max_w_size=16, p=0.5),
+                                                     Cutout(num_holes=3, max_h_size=16, max_w_size=16, p=0.8),
                                                      Normalize(mean=[0.49139968, 0.48215841, 0.44653091], std=[0.24703223, 0.24348513, 0.26158784],),
                                                      ToTensor()
                                                      ])

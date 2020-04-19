@@ -17,7 +17,7 @@ def get_lr(optimizer):
     for param_group in optimizer.param_groups:
         return param_group['lr']
 
-def train_model(model, device, train_loader, optimizer, scheduler, criterion, epoch):
+def train_model(epoch, model, device, train_loader, criterion, optimizer, scheduler=False):
   model.train()
   pbar = tqdm(train_loader)
   correct = 0
@@ -44,7 +44,8 @@ def train_model(model, device, train_loader, optimizer, scheduler, criterion, ep
     loss.backward()
     #print("Calling Step -->")
     optimizer.step()
-    #scheduler.step()
+    if(scheduler):
+        scheduler.step()
     #print("Exiting Step <--")
 
     # Update pbar-tqdm
@@ -57,7 +58,7 @@ def train_model(model, device, train_loader, optimizer, scheduler, criterion, ep
     train_acc.append(100*correct/processed)
 
 
-def test_model(model, device, criterion, test_loader, is_last_epoch):
+def test_model(model, device, test_loader, criterion, is_last_epoch):
     model.eval()
     test_loss = 0
     correct = 0

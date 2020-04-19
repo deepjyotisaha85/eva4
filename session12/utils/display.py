@@ -41,5 +41,3 @@ def show_random_images(dataset, classes, size):
 	show_img(torchvision.utils.make_grid(images[img_list]), size)
 	# print labels
 	print(' '.join('%5s' % classes[labels[j]] for j in img_list))
-
-  
