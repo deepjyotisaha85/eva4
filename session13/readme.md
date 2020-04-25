@@ -4,8 +4,7 @@ Highlights:
 
 2. YoloV3 Trained on Custom Dataset:
 
-  a. Battle Tank Detection in Republic Day Parade: 
-  https://www.youtube.com/watch?v=NiwNiGO4ud8&feature=youtu.be
+a) Battle Tank Detection in Republic Day Parade: https://www.youtube.com/watch?v=NiwNiGO4ud8&feature=youtu.be
 
 
 Full Credits:
