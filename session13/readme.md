@@ -1,4 +1,4 @@
-Highlights:
+Summary
 
 OpenCV YoloV3 Annotated Image: https://github.com/deepjyotisaha85/eva4/blob/master/session13/opencvyolov3/table_annotated.png
 
