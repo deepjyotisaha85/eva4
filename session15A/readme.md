@@ -34,7 +34,7 @@ The dataset consists of following types of images: </br>
 ### Total Count of Images ###
 
 | Image Type  | Resolution | Number of Images |
-| ------------- | ------------- |
+| ----------- | ---------- | ---------------- |
 | Background Image  | 220 x 220 | 100  |
 | Foreground Image  | 110 x 110 | 100  |
 | Foreground Mask Image  | 110 x 110 | 100  |
