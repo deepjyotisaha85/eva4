@@ -52,7 +52,7 @@ The dataset consists of following types of images: </br>
 | Foreground Mask Image  | 110 x 110 | 100  |
 | Generated Image  | 220 x 220 | 400000  |
 | Generated Image Mask  | 220 x 220 | 400000  |
-| Depthmap Image  | 220 x 220 | 150000 |
+| Depthmap Image  | 220 x 220 | 85500 |
 
 _Rest of the Depthmap Image Generation is in Progress_
 
