@@ -15,7 +15,10 @@ www.drive.google.com
 <img src="mask/fg_1.jpg" width="150" > <img src="mask/fg_7.jpg" width="150" > <img src="mask/fg_17.jpg" width="150" > <img src="mask/fg_21.jpg" width="150" > <img src="mask/fg_29.jpg" width="150" > 
 
 ## Generated Images (superimpose foreground on background image)
+<img src="fg_bg/fg_bg_638.jpg" width="150" > <img src="fg_bg/fg_bg_3173.jpg" width="150" > <img src="fg_bg/fg_bg_26682.jpg" width="150" > <img src="fg_bg/fg_bg_37898.jpg" width="150" > <img src="fg_bg/fg_bg_39553.jpg" width="150" > 
 
 ## Masks for Generated Images 
+<img src="fg_bg_mask/fg_bg_mask_638.jpg" width="150" > <img src="fg_bg_mask/fg_bg_mask_3173.jpg" width="150" > <img src="fg_bg_mask/fg_bg_mask_26682.jpg" width="150" > <img src="fg_bg_mask/fg_bg_mask_37898.jpg" width="150" > <img src="fg_bg_mask/fg_bg_mask_39553.jpg" width="150" > 
 
 ## Depthmap for Generated Images
+<img src="depthmap/depth_638.jpg" width="150" > <img src="depthmap/depth_3173.jpg" width="150" > <img src="depthmap/depth_26682.jpg" width="150" > <img src="depthmap/depth_37898.jpg" width="150" > <img src="depthmap/depth_39553.jpg" width="150" > 
