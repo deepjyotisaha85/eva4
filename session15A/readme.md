@@ -11,8 +11,11 @@ www.drive.google.com
 ## Foreground Images
 <img src="fg/fg_1.png" width="150" > <img src="fg/fg_7.png" width="150" > <img src="fg/fg_17.png" width="150" > <img src="fg/fg_21.png" width="150" > <img src="fg/fg_29.png" width="150" > 
 
+## Foreground Mask Images
+<img src="mask/fg_1.jpg" width="150" > <img src="mask/fg_7.jpg" width="150" > <img src="mask/fg_17.jpg" width="150" > <img src="mask/fg_21.jpg" width="150" > <img src="mask/fg_29.jpg" width="150" > 
+
 ## Generated Images (superimpose foreground on background image)
 
-## Mask Images
+## Masks for Generated Images 
 
-## Depthmap Images
+## Depthmap for Generated Images
