@@ -35,6 +35,10 @@ The dataset consists of following types of images: </br>
 * Mask for Generated Images: This is the mask for generated images. The image size 220x220. These images are under the folder fg_bg_mask.
 * Depthmap Images:These are the depthmap images of the generated image, these are generated using a DepthDepth model. The image size 220x220. These images are under the folder depthmap.
 
+### Dataset Statistics ###
+* Mean
+* STD Dev
+
 ### Total Count of Images ###
 
 | Image Type  | Resolution | Number of Images |
