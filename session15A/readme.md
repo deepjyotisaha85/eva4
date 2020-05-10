@@ -2,7 +2,7 @@
 
 ### Team Members ###
 * Deepjyoti Saha (Canvas ID: deepjyoti.saha@gmail.com)
-* Mohua (Canvas ID: )
+* Mohua (Canvas ID: sikdermohua@gmail.com)
 
 ## Dataset Download
 You can download the complete dataset from the google drive link below <br/> <br/>
