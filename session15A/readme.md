@@ -51,5 +51,5 @@ The following steps were followed to create the dataset: </br>
 * Foreground Images: These images were downlaoded from the internet. The background from the images were removed using Microsoft Powerpoint "Remove Background" feature
 * Foreground Mask Images: These images were generated using GIMP image editor. 
 * Generated Images: These images were generated using a custom code. This code can be found here.
-* Mask for Generated Images: These images were generated using a custom code. This code can be found here.
+* Mask for Generated Images: These images were generated using a custom code. This code can be found here - [Named Link](https://github.com/deepjyotisaha85/eva4/blob/master/session15A/S15A_Dataset_Generation.ipynb "Dataset Generation Code Notebook")
 * Depthmap Images:These images were generated using a DenseDepth model. This code can be found here.
