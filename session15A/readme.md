@@ -1,12 +1,12 @@
 # EVA4 15A : Dataset Generation
 
-## Dataset Download
-You can download the complete dataset from the google drive link below <br/> <br/>
-[Dataset Download Link](https://drive.google.com/drive/folders/1sdyGO83qvwteiXLBqJnxPH6NwgnVPZAq?usp=sharing)
-
 ### Team Members ###
 * Deepjyoti Saha (Canvas ID: deepjyoti.saha@gmail.com)
 * Mohua (Canvas ID: )
+
+## Dataset Download
+You can download the complete dataset from the google drive link below <br/> <br/>
+[Dataset Download Link](https://drive.google.com/drive/folders/1sdyGO83qvwteiXLBqJnxPH6NwgnVPZAq?usp=sharing)
 
 ## Background Images
 <img src="bg/bg_1.jpg" width="150" > <img src="bg/bg_2.jpg" width="150" > <img src="bg/bg_3.jpg" width="150" > <img src="bg/bg_5.jpg" width="150" > <img src="bg/bg_10.jpg" width="150" > 
@@ -55,4 +55,5 @@ The following steps were followed to create the dataset: </br>
 * Foreground Mask Images: These images were generated using GIMP image editor. 
 * Generated Images: These images were generated using a custom code. This code can be found here.
 * Mask for Generated Images: These images were generated using a custom code. This code can be found here - [Dataset Generation Code Notebook](https://github.com/deepjyotisaha85/eva4/blob/master/session15A/S15A_Dataset_Generation.ipynb)
-* Depthmap Images:These images were generated using a DenseDepth model. This code can be found here.
+* Depthmap Images:These images were generated using a DenseDepth model. This code can be found here - [DenseDepth Generation Code Notebook](https://github.com/deepjyotisaha85/eva4/blob/master/session15A/S15A_DenseDepth_Generation.ipynb)
+  * Credits for DenseDepth Model CodeBase: [DenseDepth Monocular Depth Estimation](https://github.com/ialhashim/DenseDepth)
