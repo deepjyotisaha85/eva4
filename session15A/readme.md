@@ -1,12 +1,9 @@
 # EVA4 15A : Dataset Generation
 
 ## Dataset Download
-You can download the complete dataset from the google drive link below
+You can download the complete dataset from the google drive link below <br/>
 [Dataset Download Link](https://drive.google.com/drive/folders/1sdyGO83qvwteiXLBqJnxPH6NwgnVPZAq?usp=sharing)
 
-```
-https://drive.google.com/drive/folders/1sdyGO83qvwteiXLBqJnxPH6NwgnVPZAq?usp=sharing
-```
 ## Background Images
 <img src="bg/bg_1.jpg" width="150" > <img src="bg/bg_2.jpg" width="150" > <img src="bg/bg_3.jpg" width="150" > <img src="bg/bg_5.jpg" width="150" > <img src="bg/bg_10.jpg" width="150" > 
 
