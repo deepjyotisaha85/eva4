@@ -40,8 +40,8 @@ The dataset consists of following types of images: </br>
 ### Dataset Statistics ###
 | Image Type  | Mean | Standard Deviation |
 | ----------- | ---------- | ---------------- |
-| Generated Image  | XYZ | ABC  |
-| Generated Image Mask  | XYZ | ABC  |
+| Generated Image  |   |   |
+| Generated Image Mask  |   |   |
 
 ### Total Count of Images ###
 
