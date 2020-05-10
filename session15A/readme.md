@@ -4,6 +4,10 @@
 You can download the complete dataset from the google drive link below <br/> <br/>
 [Dataset Download Link](https://drive.google.com/drive/folders/1sdyGO83qvwteiXLBqJnxPH6NwgnVPZAq?usp=sharing)
 
+### Team Members ###
+* Deepjyoti Saha (Canvas ID: deepjyoti.saha@gmail.com)
+* Mohua (Canvas ID: )
+
 ## Background Images
 <img src="bg/bg_1.jpg" width="150" > <img src="bg/bg_2.jpg" width="150" > <img src="bg/bg_3.jpg" width="150" > <img src="bg/bg_5.jpg" width="150" > <img src="bg/bg_10.jpg" width="150" > 
 
