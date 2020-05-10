@@ -1,4 +1,4 @@
-# EVA4 15A: Dataset Generation
+# EVA4 15A : Dataset Generation
 
 ## Dataset Download
 You can download the complete dataset from the google drive link below
@@ -23,7 +23,7 @@ www.drive.google.com
 ## Depthmap for Generated Images
 <img src="depthmap/depth_638.jpg" width="150" > <img src="depthmap/depth_3173.jpg" width="150" > <img src="depthmap/depth_26682.jpg" width="150" > <img src="depthmap/depth_37898.jpg" width="150" > <img src="depthmap/depth_39553.jpg" width="150" > 
 
-## Description
+## Dataset Description
 The dataset consists of following types of images: </br>
 * Background Images: These are images of a scene, in this case a park. These images are under the folder bg.
 * Foreground Images: These are images of an object, in this case a dog with a transparent background. These images are under the folder fg.
@@ -44,3 +44,12 @@ The dataset consists of following types of images: </br>
 | Depthmap Image  | 150000 |
 
 _Rest of the Depthmap Image Generation is in Progress_
+
+## Dataset Generation Process
+The following steps were followed to create the dataset: </br>
+* Background Images: These images were downlaoded from the internet.
+* Foreground Images: These images were downlaoded from the internet. The background from the images were removed using Microsoft Powerpoint "Remove Background" feature
+* Foreground Mask Images: These images were generated using GIMP image editor. 
+* Generated Images: These images were generated using a custom code. This code can be found here.
+* Mask for Generated Images: These images were generated using a custom code. This code can be found here.
+* Depthmap Images:These images were generated using a DenseDepth model. This code can be found here.
