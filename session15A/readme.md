@@ -42,6 +42,7 @@ The dataset consists of following types of images: </br>
 | ----------- | ---------- | ---------------- |
 | Generated Image  |   |   |
 | Generated Image Mask  |   |   |
+| Depthmap Image   |   |   |
 
 ### Total Count of Images ###
 
