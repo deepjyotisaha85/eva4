@@ -1,8 +1,10 @@
 # EVA4 15A : Dataset Generation
 
 ### Team Members ###
-* Deepjyoti Saha (Canvas ID: deepjyoti.saha@gmail.com)
-* Mohua (Canvas ID: sikdermohua@gmail.com)
+| Name | Canvas Id |
+| ----------- | ---------- |
+| Deepjyoti Saha  |  deepjyoti.saha@gmail.com |
+| Mohua  | sikdermohua@gmail.com |
 
 ## Dataset Download
 You can download the complete dataset from the google drive link below <br/> <br/>
@@ -36,8 +38,10 @@ The dataset consists of following types of images: </br>
 * Depthmap Images:These are the depthmap images of the generated image, these are generated using a DepthDepth model. The image size 220x220. These images are under the folder depthmap.
 
 ### Dataset Statistics ###
-* Mean
-* STD Dev
+| Image Type  | Mean | Standard Deviation |
+| ----------- | ---------- | ---------------- |
+| Generated Image  | XYZ | ABC  |
+| Generated Image Mask  | XYZ | ABC  |
 
 ### Total Count of Images ###
 
