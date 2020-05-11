@@ -50,8 +50,8 @@ The dataset consists of following types of images: </br>
 | Image Type  | Resolution | Number of Images |
 | ----------- | ---------- | ---------------- |
 | Background Image  | 220 x 220 | 100  |
-| Foreground Image  | 110 x 110 | 100  |
-| Foreground Mask Image  | 110 x 110 | 100  |
+| Foreground Image  | 132 x 132 | 100  |
+| Foreground Mask Image  | 132 x 132 | 100  |
 | Generated Image  | 220 x 220 | 400000  |
 | Generated Image Mask  | 220 x 220 | 400000  |
 | Depthmap Image  | 220 x 220 | 85500 |
