@@ -45,6 +45,8 @@ The dataset consists of following types of images: </br>
 | Generated Image Mask  |   |   |
 | Depthmap Image   |   |   |
 
+_Statistics Calculation is in Progress_
+
 ### Total Count of Images ###
 
 | Image Type  | Resolution | Number of Images |
@@ -54,9 +56,7 @@ The dataset consists of following types of images: </br>
 | Foreground Mask Image  | 132 x 132 | 100  |
 | Generated Image  | 220 x 220 | 400000  |
 | Generated Image Mask  | 220 x 220 | 400000  |
-| Depthmap Image  | 220 x 220 | 85500 |
-
-_Rest of the Depthmap Image Generation is in Progress_
+| Depthmap Image  | 220 x 220 | 400000 |
 
 ## Dataset Generation Process
 The following steps were followed to create the dataset: </br>
