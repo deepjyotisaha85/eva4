@@ -42,8 +42,8 @@ The dataset consists of following types of images: </br>
 | Image Type  | Mean | Standard Deviation |
 | ----------- | ---------- | ---------------- |
 | Generated Image  | [0.50169254 0.51531572 0.38720035] | [0.25096876 0.2417532 0.28520041]  |
-| Generated Image Mask  |   |   |
-| Depthmap Image   |   |   |
+| Generated Image Mask  | [0.09301607 0.09301607 0.09301607]  |  [0.28483643 0.28483643 0.28483643] |
+| Depthmap Image   | [0.34092307 0.34092307 0.34092307]  | [0.23391564 0.23391564 0.23391564]  |
 
 _Statistics Calculation is in Progress_
 
