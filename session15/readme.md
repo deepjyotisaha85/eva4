@@ -25,7 +25,7 @@ predict.predict_images(modelpath, filepath, bg,  image)
 
 |    Epocs     |  Mask Dice Score   |    Depthmap Dice Score  | 
 | ---------------- | -------------- | ------------------ |
-| 22|   0.91 |  0.41 |
+| 25|   0.91 |  0.43 |
 
 The following predicted images were generated with input images that network has never seen.
 
