@@ -9,7 +9,7 @@ Till now, I have been playing with classification problems, which predict classe
 
 ### Results
 
-|    Background (Input)     |     Image (Input).    |    Predicted Mask (Output).  | Predicted Depthmap (Output) |
+|    Epocs     |     Mask Dice Score   |    P  | Predicted Depthmap (Output) |
 
 ### Usage
 ```python
