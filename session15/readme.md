@@ -9,7 +9,10 @@ Till now, I have been playing with classification problems, which predict classe
 
 ### Results
 
-|    Epocs     |     Mask Dice Score   |    P  | Predicted Depthmap (Output) |
+|    Epocs     |  Mask Dice Score   |    Depthmap Dice Score  | 
+| ---------------- | -------------- | ------------------ |
+| 22|   0.91 |  0.41 |
+
 
 ### Usage
 ```python
