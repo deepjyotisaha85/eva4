@@ -132,3 +132,4 @@ The size of the dataset was the biggest challenge, hence I had to train the netw
 * Dice Score Calculation: https://github.com/milesial/Pytorch-UNet
 * Gradient Calculation in Pytorch: https://discuss.pytorch.org/t/how-to-calculate-the-gradient-of-images/1407/6
 * Monocular Depth Estimation: https://github.com/ialhashim/DenseDepth
+* https://towardsdatascience.com/metrics-to-evaluate-your-semantic-segmentation-model-6bcb99639aa2
