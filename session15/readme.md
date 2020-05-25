@@ -29,18 +29,23 @@ The results were generated with input images that network has never seen.
 | <img src="assets/bg1.png" width="150" >  |  <img src="assets/img1.png" width="150" > |  <img src="assets/mask1.png" width="150" > |  <img src="assets/depthmap1.png" width="150" > |
 | <img src="assets/bg2.png" width="150" >  |  <img src="assets/img2.png" width="150" > |  <img src="assets/mask2.png" width="150" > |  <img src="assets/depthmap2.png" width="150" > |
 
+### Model
 
 
-## Solution Approach
 
-## Dataset 
+## Solution
 
-## Data Pipeline
+### Problem Statement
 
-## Model
+### Approach
 
+### Dataset 
 
-## Loss Function
+### Data Pipeline
+
+### Model
+
+### Loss Function
 
 
 ## Training & Evaluation
