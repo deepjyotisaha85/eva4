@@ -52,7 +52,7 @@ The dataset consists of the following images sets: </br>
 
 More details on the dataset can be found here: </br>
 http://github.com - automatic!
-[GitHub](http://github.com)
+[Session 15A - Dataset Generation](https://github.com/deepjyotisaha85/eva4/tree/master/session15A)
 
 ### Data Pipeline
 
