@@ -1,4 +1,4 @@
-# EVA4 15 : Mask & Depth Prediction
+# EVA4 15 : Mask & Depthmap Prediction
 
 #### Submitted By #### 
 Deepjyoti Saha </br>
