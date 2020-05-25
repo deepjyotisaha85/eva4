@@ -7,6 +7,10 @@ Canvas ID: deepjyoti.saha@gmail.com
 ## Overview
 Till now, I have been playing with classification problems, which predict classes in a given image. In this exercise I have built a DNN which predicts images! This network takes two input images - an image with a foreground object & a background scene, and an image with only the background scene, and generates the mask for the foreground object and a depthmap of the image. How cool is that!
 
+### Results
+
+|    Background (Input)     |     Image (Input).    |    Predicted Mask (Output).  | Predicted Depthmap (Output) |
+
 ### Usage
 ```python
 
@@ -91,10 +95,13 @@ depthmap_loss = (w1 * loss_pixel) + (w2 * loss_edge) + (w3 * loss_ssim)
 
 ```
 
-### Evaluation 
-
-
-### Training
+### Training & Evaluation 
+I used DICE score for evaluation of the predicted images. I trained the network for 25 epocs.
 
 ## Next Steps
+* Image Augmentation
+* Code Optimization
+
+## References
+
 
