@@ -7,13 +7,6 @@ Canvas ID: deepjyoti.saha@gmail.com
 ## Overview
 Till now, I have been playing with classification problems, which predict classes in a given image. In this exercise I have built a DNN which predicts images! This network takes two input images - an image with a foreground object & a background scene, and an image with only the background scene, and generates the mask for the foreground object and a depthmap of the image. How cool is that!
 
-### Results
-
-|    Epocs     |  Mask Dice Score   |    Depthmap Dice Score  | 
-| ---------------- | -------------- | ------------------ |
-| 22|   0.91 |  0.41 |
-
-
 ### Usage
 ```python
 
@@ -27,8 +20,13 @@ from utils import predict
 predict.predict_images(modelpath, filepath, bg,  image)
 ```
 
-### Input & Output Images ###
-The results were generated with input images that network has never seen.
+### Results ###
+
+|    Epocs     |  Mask Dice Score   |    Depthmap Dice Score  | 
+| ---------------- | -------------- | ------------------ |
+| 22|   0.91 |  0.41 |
+
+The following predicted images were generated with input images that network has never seen.
 
 |    Background (Input)     |     Image (Input)    |    Predicted Mask (Output)  | Predicted Depthmap (Output) |
 | ---------------- | ---------------- | -------------- | ------------------ |
