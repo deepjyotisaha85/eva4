@@ -12,10 +12,11 @@ Till now, I have been playing with classification problems, which predict classe
 
 from utils import predict
 
-## modelpath = <Absolute Path for Model File>
-## filepath = <Absolute Path for Test Image Files>
-## bg = <Filename for Background Image>
-## image = <Filename for Image>
+## arguments:
+## modelpath - the absolute path for model file
+## filepath - the absolute path for test image files
+## bg - the filename for background image
+## image - the filename for image
 
 predict.predict_images(modelpath, filepath, bg,  image)
 ```
@@ -62,6 +63,8 @@ The key challenge in setting up the datapipeline was the sheer volume of data. E
 Further, I converted the mask images to grayscale to further optimize, as the information contained there is monochrome. I did not intentionally convert the background and image to grayscale hoping that colour information would help down the line.
 
 Finally I converted the images to 64 x 64 for training, as beyond that resolution I was not able to train it on Colab using the available hardware resources. The original image sizes were 220 x 220.
+
+[Datagenerator Code](utils/dataprep.py)
 
 ### Model
 The base architecture DNN is based on the RESNET architecture. The network accepts two input images - the image and the background. The network has a total of __3,199,552__ parameters. The network consists of the following layers: </br>
