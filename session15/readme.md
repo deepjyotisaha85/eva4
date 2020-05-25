@@ -66,17 +66,19 @@ Further, I converted the mask images to grayscale to further optimize, as the in
 Finally I converted the images to 64 x 64 for training, as beyond that resolution I was not able to train it on Colab using the available hardware resources. The original image sizes were 220 x 220.
 
 ### Model
-The base architecture DNN is based on the RESNET architecture. The network accepts two input images - the image and the background. The network has a total of parameters X . The network consists of the following layers: </br>
+The base architecture DNN is based on the RESNET architecture. The network accepts two input images - the image and the background. The network has a total of 3,199,552 parameters. The network consists of the following layers: </br>
 
-|    Layer    |  Description | #Input Channels    |    #Output Channels |
-| ---------------- |---------------- | ---------------- | -------------- |
-| Image Preparation Layer (Image) | Process the input image, increase the number the channels | 3 |  32 | 
-| Image Preparation Layer (Background) | Process the background image, increase the number the channels| Process the  3 |  32 | 
-| Resnet Block 1 | Process the   3 |  32 | 
-| Resnet Block 2 | Process the  | | |
-| Concatenation | Process the   |  32 | |
-| Mask Head | Process the  |  32 |  |
-| Depthmap Head | Process the |  |  32 | 
+|    Layer     | #Input Channels    |    #Output Channels |
+| ------------ | ------------------ | ------------------- |
+| Image Preparation Layer (Image) | 3 |  32 | 
+| Image Preparation Layer (Background) | 3 |  32 | 
+| Resnet Block 1 (Image) | 32 |  64 | 
+| Resnet Block 2 (Image) | 64 | 128 |
+| Sequential Block 1 (Background Image) | 32 | 64 |
+| Sequential Block 2 (Background Image) | 64 | 128 |
+| Concatenation | 128 * 2  |  256 | |
+| Mask Head | 256 |  1  |
+| Depthmap Head | 256  |  1 | 
 
 #### Model Visualizaton
 The model visualization was generated using torchviz
