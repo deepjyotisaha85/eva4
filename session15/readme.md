@@ -28,14 +28,12 @@ predict.predict_images(modelpath, filepath, bg,  image)
 
 |    Epocs     |  Mask Dice Score   |    Depthmap Dice Score  | 
 | ---------------- | -------------- | ------------------ |
-| 25|   0.91 |  0.43 |
+| 28 |   0.91 |  0.43 |
 
 The following predicted images were generated with input images that network has never seen.
 
 |    Background (Input)     |     Image (Input)    |    Predicted Mask (Output)  | Predicted Depthmap (Output) |
 | ---------------- | ---------------- | -------------- | ------------------ |
-| <img src="assets/bg1.png" width="150" >  |  <img src="assets/img1.png" width="150" > |  <img src="assets/mask1.png" width="150" > |  <img src="assets/depthmap1.png" width="150" > |
-| <img src="assets/bg2.png" width="150" >  |  <img src="assets/img2.png" width="150" > |  <img src="assets/mask2.png" width="150" > |  <img src="assets/depthmap2.png" width="150" > |
 | <img src="assets/bg1.png" width="150" >  |  <img src="assets/img1.png" width="150" > |  <img src="assets/mask1.png" width="150" > |  <img src="assets/depthmap1.png" width="150" > |
 | <img src="assets/bg2.png" width="150" >  |  <img src="assets/img2.png" width="150" > |  <img src="assets/mask2.png" width="150" > |  <img src="assets/depthmap2.png" width="150" > |
 
