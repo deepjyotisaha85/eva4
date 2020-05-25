@@ -58,9 +58,10 @@ More details on the dataset can be found here: [Session 15A - Dataset Generation
 
 ### Loss Function
 
+### Evaluation 
 
-## Training & Evaluation
 
+### Training
 
-## Results
+## Next Steps
 
