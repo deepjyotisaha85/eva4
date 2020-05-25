@@ -63,10 +63,15 @@ Further, I converted the mask images to grayscale to further optimize, as the in
 Finally I converted the images to 64 x 64 for training, as beyond that resolution I was not able to train it on Colab using the available hardware resources. The original image sizes were 220 x 220.
 
 ### Model
-The network has 2 different tasks to perform - predict the masks and predict the depthmaps. I have used two different loss functions for these tasks. However, on training I found that mask was getting trained more easily than the depth map, hence I decided to conider a weighted average of the two loss functions, so that I can assign weights to each.
 
 
 ### Loss Function
+The network has 2 different tasks to perform - predict the masks and predict the depthmaps. I have used two different loss functions for these tasks. However, on training I found that mask was getting trained more easily than the depth map, hence I decided to conider a weighted average of the two loss functions, so that I can assign weights to each.
+
+```
+
+loss = (w1 * mask_loss) + (w2 * depthmap_loss)
+```
 
 #### Loss Function for Mask
 
