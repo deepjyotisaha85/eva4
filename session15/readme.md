@@ -66,6 +66,10 @@ Finally I converted the images to 64 x 64 for training, as beyond that resolutio
 
 ### Loss Function
 
+#### Loss Function for Mask
+
+#### Loss Function for Depthmap
+
 ### Evaluation 
 
 
