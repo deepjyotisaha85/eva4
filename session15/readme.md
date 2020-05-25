@@ -66,16 +66,30 @@ Finally I converted the images to 64 x 64 for training, as beyond that resolutio
 
 
 ### Loss Function
-The network has 2 different tasks to perform - predict the masks and predict the depthmaps. I have used two different loss functions for these tasks. However, on training I found that mask was getting trained more easily than the depth map, hence I decided to conider a weighted average of the two loss functions, so that I can assign weights to each.
+The network has 2 different tasks to perform - predict the masks and predict the depthmaps. I have used two different loss functions for these tasks. However, on training I found that mask was getting trained more easily than the depth map, hence I decided to conider a weighted average of the two loss functions, so that I can assign weights to each. In this case, I got good results by assigning a weight of 70% to depthmap loss.
 
 ```
+w1 - weightage for mask loss
+w2 - weightage for depthmap loss
 
 loss = (w1 * mask_loss) + (w2 * depthmap_loss)
+
 ```
 
 #### Loss Function for Mask
+I used BCEWithLogitsLoss for the mask prediction
 
 #### Loss Function for Depthmap
+I used a custom loss funciton for depthmap prediction. The custom loss function had 3 components, and is calculated as follows:
+
+```
+loss_pixel = Pixel wise loss
+loss_edge = Edge loss
+loss_ssim = Loss calculated based on Structural Similarity (SSIM)
+
+depthmap_loss = (w1 * loss_pixel) + (w2 * loss_edge) + (w3 * loss_ssim) 
+
+```
 
 ### Evaluation 
 
