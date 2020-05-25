@@ -38,7 +38,7 @@ The results were generated with input images that network has never seen.
 | <img src="assets/bg2.png" width="150" >  |  <img src="assets/img2.png" width="150" > |  <img src="assets/mask2.png" width="150" > |  <img src="assets/depthmap2.png" width="150" > |
 
 ### Model
-<img src="assets/custom_model.png" width="150" > 
+<img src="assets/custom_model.png" width="500" > 
 
 ## Solution
 
