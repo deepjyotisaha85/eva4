@@ -82,7 +82,8 @@ The base architecture DNN is based on the RESNET architecture. The network accep
 
 #### Model Visualizaton
 The model visualization was generated using torchviz </br>
-<img src="assets/custom_model.png" width="500" > 
+
+<img src="assets/custom_model.png" width="700" > 
 
 ### Loss Function
 The network has 2 different tasks to perform - predict the masks and predict the depthmaps. I have used two different loss functions for these tasks. However, on training I found that mask was getting trained more easily than the depth map, hence I decided to conider a weighted average of the two loss functions, so that I can assign weights to each. In this case, I got good results by assigning a weight of 70% to depthmap loss.
