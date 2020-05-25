@@ -81,6 +81,8 @@ The base architecture DNN is based on the RESNET architecture. The network accep
 | Mask Head | 256 |  1  |
 | Depthmap Head | 256  |  1 | 
 
+[DNN Code](model/dnn.py)
+
 #### Model Visualizaton
 The model visualization was generated using torchviz </br>
 
@@ -96,6 +98,7 @@ w2 - weightage for depthmap loss
 loss = (w1 * mask_loss) + (w2 * depthmap_loss)
 
 ```
+[Custom Loss Code](utils/customloss.py)
 
 #### Loss Function for Mask
 I used BCEWithLogitsLoss for the mask prediction
@@ -115,9 +118,16 @@ depthmap_loss = (w1 * loss_pixel) + (w2 * loss_edge) + (w3 * loss_ssim)
 ### Training & Evaluation 
 I used DICE score for evaluation of the predicted images. I trained the network for 25 epocs.
 
+[Dice Score Code](utils/dice.py)
+
 ### Challenges & Constrains
 The size of the dataset was the biggest challenge, hence I had to train the network on images of resolution 64 x 64. The original image size is 220 x 220
 
 ## Next Steps
 * Image Augmentation
 * Code Optimization
+
+
+## Reference
+* [Dice Score](https://github.com/milesial/Pytorch-UNet)
+* 
