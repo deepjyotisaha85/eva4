@@ -50,9 +50,7 @@ The dataset consists of the following images sets: </br>
 * Mask for Generated Images: This is the mask for generated images. 
 * Depthmap Images: These are the depthmap images of the generated image, these are generated using a DepthDepth model. 
 
-More details on the dataset can be found here: </br>
-http://github.com - automatic!
-[Session 15A - Dataset Generation](https://github.com/deepjyotisaha85/eva4/tree/master/session15A)
+More details on the dataset can be found here: [Session 15A - Dataset Generation](https://github.com/deepjyotisaha85/eva4/tree/master/session15A)
 
 ### Data Pipeline
 
