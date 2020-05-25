@@ -11,12 +11,12 @@ Till now, I have been playing with classification problems, which predict classe
 
 from utils import predict
 
-MODELPATH = <Absolute Path for Model File>
-FILEPATH = <Absolute Path for Test Image Files>
-bg = <Filename for Background Image>
-image = <Filename for Image>
+## modelpath = <Absolute Path for Model File>
+## filepath = <Absolute Path for Test Image Files>
+## bg = <Filename for Background Image>
+## image = <Filename for Image>
 
-predict.predict_images(MODELPATH, FILEPATH, bg,  image)
+predict.predict_images(modelpath, filepath, bg,  image)
 ```
 
 ### Input & Output Images ###
