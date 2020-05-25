@@ -13,7 +13,7 @@ Till now, I have been playing with classification problems, which predict classe
 | <img src="assets/bg1.png" width="150" >  |  <img src="assets/img1.png" width="150" > |  <img src="assets/mask1.png" width="150" > |  <img src="assets/depthmap1.png" width="150" > |
 | <img src="assets/bg2.png" width="150" >  |  <img src="assets/img2.png" width="150" > |  <img src="assets/mask2.png" width="150" > |  <img src="assets/depthmap2.png" width="150" > |
 
-
+Note: These are the results generated with input images that network has never seen.
 
 ## Solution Approach
 
