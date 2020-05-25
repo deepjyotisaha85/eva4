@@ -5,7 +5,7 @@ Deepjyoti Saha </br>
 Canvas ID: deepjyoti.saha@gmail.com
 
 ## Overview
-Till now, I have been playing with classification problems, which predict classes in a given image. In this exercise I have built a DNN which predicts images! This network takes two input images - an image with a foreground object & a background scene, and an image with only the background scene, and generates the mask for the foreground object and a depthmap of the image. How cool is that!
+Till now, I have been playing with classification problems, which predict classes in a given image. In this exercise I have built a DNN which predicts images! This network takes two input images - an image with a foreground object & a background scene, and an image with only the background scene, and generates the mask for the foreground object in the image and a depthmap of the image. How cool is that!
 
 ### Usage
 Download the final model file from the following link: 
