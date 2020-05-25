@@ -9,6 +9,7 @@ Till now, I have been playing with classification problems, which predict classe
 
 ### Usage
 Download the final model file from the following link: 
+[Predict Mask and Depthmap Model Download Link](https://drive.google.com/drive/folders/16g8vBABth6hPfzfXAwmaOWBOJfIhmCZW?usp=sharing) <br/>
 
 ```python
 
