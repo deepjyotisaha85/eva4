@@ -23,6 +23,7 @@ from utils import predict
 
 predict.predict_images(modelpath, filepath, bg,  image)
 ```
+[Sample Usage Code](S15_SamplePredict.ipynb)
 
 ### Results ###
 
@@ -44,6 +45,8 @@ In this exercise I attempted to build DNN which takes two input images - an imag
 
 ### Approach
 The approach is to build a DNN using ideas from the RESNET architecture, and then design the tail to predict output images instead of labels. I have then used suitable loss functions to train the network to learn the patterns and predict the mask and depthmap images. I have used two different heads and different loss functions for the mask and depthmap prediction. 
+
+[Solution Code](S15_Mask_and_Depthmap_Prediction.ipynb)
 
 ### Dataset 
 The dataset consists of the following images sets: </br>
