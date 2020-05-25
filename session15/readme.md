@@ -50,9 +50,16 @@ The dataset consists of the following images sets: </br>
 * Mask for Generated Images: This is the mask for generated images. 
 * Depthmap Images: These are the depthmap images of the generated image, these are generated using a DepthDepth model. 
 
+The dataset consist of 400000 images for each set.
+
 More details on the dataset can be found here: [Session 15A - Dataset Generation](https://github.com/deepjyotisaha85/eva4/tree/master/session15A)
 
 ### Data Pipeline
+The key challenge in setting up the datapipeline was the sheer volume of data. Each of the image set to be processed had 400000 image files. I built a customer Dataset class which extends the Dataset class from Pytorch and I read the files directly from the filesystem in the __getitem__. This is because the data volume was too large to be read and stored in a single shot.
+
+Further, I converted the mask images to grayscale to further optimize, as the information contained there is monochrome. I did not intentionally convert the background and image to grayscale hoping that colour information would help down the line.
+
+Finally I converted the images to 64 x 64 for training, as beyond that resolution I was not able to train it on Colab using the available hardware resources. The original image sizes were 220 x 220.
 
 ### Model
 
