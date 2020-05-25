@@ -7,7 +7,7 @@ Deepjyoti Saha
 Till now, I have been playing with classification problems, which predict classes in a given image. In this exercise I have built a DNN which predicts images! This network takes two input images - an image with a foreground object & a background scene, and an image with only the background scene, and generates the mask for the foreground object and a depthmap of the image. How cool is that!
 
 ### Input & Output Images ###
-The results generated with input images that network has never seen.
+The results were generated with input images that network has never seen.
 
 |    Background (Input)     |     Image (Input).    |    Predicted Mask (Output).  | Predicted Depthmap (Output) |
 | ---------------- | ---------------- | -------------- | ------------------ |
