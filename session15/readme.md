@@ -30,15 +30,12 @@ predict.predict_images(modelpath, filepath, bg,  image)
 ### Input & Output Images ###
 The results were generated with input images that network has never seen.
 
-|    Background (Input)     |     Image (Input).    |    Predicted Mask (Output).  | Predicted Depthmap (Output) |
+|    Background (Input)     |     Image (Input)    |    Predicted Mask (Output)  | Predicted Depthmap (Output) |
 | ---------------- | ---------------- | -------------- | ------------------ |
 | <img src="assets/bg1.png" width="150" >  |  <img src="assets/img1.png" width="150" > |  <img src="assets/mask1.png" width="150" > |  <img src="assets/depthmap1.png" width="150" > |
 | <img src="assets/bg2.png" width="150" >  |  <img src="assets/img2.png" width="150" > |  <img src="assets/mask2.png" width="150" > |  <img src="assets/depthmap2.png" width="150" > |
 | <img src="assets/bg1.png" width="150" >  |  <img src="assets/img1.png" width="150" > |  <img src="assets/mask1.png" width="150" > |  <img src="assets/depthmap1.png" width="150" > |
 | <img src="assets/bg2.png" width="150" >  |  <img src="assets/img2.png" width="150" > |  <img src="assets/mask2.png" width="150" > |  <img src="assets/depthmap2.png" width="150" > |
-
-### Model
-<img src="assets/custom_model.png" width="700" > 
 
 ## Solution
 
@@ -69,7 +66,26 @@ Further, I converted the mask images to grayscale to further optimize, as the in
 Finally I converted the images to 64 x 64 for training, as beyond that resolution I was not able to train it on Colab using the available hardware resources. The original image sizes were 220 x 220.
 
 ### Model
+The base architecture DNN is based on the RESNET architecture. The network accepts two input images - the image and the background. The network consists of the following layers in this particular order: </br>
+* Input Image Preparation Layer
+* Resnet Blocks
+* Sequential Blocks
+* Concatenation
+* Task Specific Heads
 
+|    Layer    |   #Input Channels    |    #Output Channels |
+| ---------------- | ---------------- | -------------- |
+| Image Preparation Layer (Image) |  3 |  32 | 
+| Image Preparation Layer (Background) |  3 |  32 | 
+| Resnet Block 1 |  3 |  32 | 
+| Resnet Block 2 | | |
+| Concatenation |   |  32 | 
+| Mask Head |   |  32 | 
+| Depthmap Head |   |  32 | 
+
+#### Model Visualizaton
+The model visualization was generated using torchviz
+<img src="assets/custom_model.png" width="700" > 
 
 ### Loss Function
 The network has 2 different tasks to perform - predict the masks and predict the depthmaps. I have used two different loss functions for these tasks. However, on training I found that mask was getting trained more easily than the depth map, hence I decided to conider a weighted average of the two loss functions, so that I can assign weights to each. In this case, I got good results by assigning a weight of 70% to depthmap loss.
