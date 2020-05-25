@@ -81,7 +81,7 @@ The base architecture DNN is based on the RESNET architecture. The network accep
 | Depthmap Head | 256  |  1 | 
 
 #### Model Visualizaton
-The model visualization was generated using torchviz
+The model visualization was generated using torchviz </br>
 <img src="assets/custom_model.png" width="500" > 
 
 ### Loss Function
