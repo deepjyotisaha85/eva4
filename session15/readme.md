@@ -101,10 +101,9 @@ depthmap_loss = (w1 * loss_pixel) + (w2 * loss_edge) + (w3 * loss_ssim)
 ### Training & Evaluation 
 I used DICE score for evaluation of the predicted images. I trained the network for 25 epocs.
 
+### Challenges & Constrains
+The size of the dataset was the biggest challenge, hence I had to train the network on images of resolution 64 x 64. The original image size is 220 x 220
+
 ## Next Steps
 * Image Augmentation
 * Code Optimization
-
-## References
-
-
