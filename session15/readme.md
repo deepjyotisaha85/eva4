@@ -66,7 +66,7 @@ Further, I converted the mask images to grayscale to further optimize, as the in
 Finally I converted the images to 64 x 64 for training, as beyond that resolution I was not able to train it on Colab using the available hardware resources. The original image sizes were 220 x 220.
 
 ### Model
-The base architecture DNN is based on the RESNET architecture. The network accepts two input images - the image and the background. The network has a total of 3,199,552 parameters. The network consists of the following layers: </br>
+The base architecture DNN is based on the RESNET architecture. The network accepts two input images - the image and the background. The network has a total of __3,199,552__ parameters. The network consists of the following layers: </br>
 
 |    Layer     | #Input Channels    |    #Output Channels |
 | ------------ | ------------------ | ------------------- |
@@ -82,7 +82,7 @@ The base architecture DNN is based on the RESNET architecture. The network accep
 
 #### Model Visualizaton
 The model visualization was generated using torchviz
-<img src="assets/custom_model.png" width="700" > 
+<img src="assets/custom_model.png" width="500" > 
 
 ### Loss Function
 The network has 2 different tasks to perform - predict the masks and predict the depthmaps. I have used two different loss functions for these tasks. However, on training I found that mask was getting trained more easily than the depth map, hence I decided to conider a weighted average of the two loss functions, so that I can assign weights to each. In this case, I got good results by assigning a weight of 70% to depthmap loss.
