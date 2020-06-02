@@ -128,6 +128,7 @@ I used DICE score for evaluation of the predicted images. I trained the network 
 The size of the dataset was the biggest challenge, hence I had to train the network on images of resolution 64 x 64. The original image size is 220 x 220
 
 ## Next Steps
+* Try Encoder-Decoder based Architecture
 * Image Augmentation
 * Code Optimization
 
